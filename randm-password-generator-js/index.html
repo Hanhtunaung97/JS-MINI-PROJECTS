@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/password.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="bg-basic">
+    <div id="app" class="w-screen h-screen my-20">
+      <div class="px-10 container mx-auto">
+        <div>
+          <h1 class="text-3xl text-white font-bold select-none">
+            Generate a <br />
+            <span
+              class="text-5xl text-green-400 border-b-4 border-green-400 pb-2"
+              >Random Password</span
+            >
+          </h1>
+        </div>
+        <div
+          class="mt-10 bg-green-50 p-5 flex justify-between items-center w-[600px] rounded-lg"
+        >
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder="Password"
+            class="w-full bg-green-50 outline-none "
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="w-8 h-8 stroke-2 stroke-green-500 cursor-pointer copy-icon active:scale-90 duration-200"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"
+            />
+          </svg>
+        </div>
+        <p class="text-green-100 mt-5 hidden msg ">Copied Password !</p>
+        <button id="btn" class="text-white px-5 py-3 bg-green-500 mt-10 rounded-lg flex justify-center items-center active:bg-white active:text-green-500 duration-200 active:scale-95 group">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="w-6 h-6 stroke-2 fill-current stroke-white mr-2 group-active:stroke-green-500 duration-200"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+            />
+          </svg>
+          <span class="font-semibold">Generate Password</span>
+        </button>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

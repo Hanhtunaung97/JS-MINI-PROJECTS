@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./src/index.css" />
+  </head>
+  <body class="bg-gray-800">
+    <main id="app">
+      <div class="md:max-w-[1000px] mx-auto h-screen">
+        <div class="w-3/5 h-full mx-auto flex justify-center items-center">
+          <div
+            class="w-full flex flex-col gap-y-10 p-10 my-10 back-ground rounded-lg justify-center items-center"
+          >
+            <!-- search input -->
+            <div class="search flex justify-between items-center w-full">
+              <input
+                type="text"
+                class="searchBox bg-gray-900 shadow text-sm rounded-lg block w-full p-3 dark:bg-gray-100 dark:placeholder-gray-400 dark:text-gray-900 outline-none duration-200"
+                placeholder="search city name"
+              />
+              <button
+                class="searchBtn group p-3 ms-2 text-sm font-medium text-center hover:text-gray-50 bg-gray-700 rounded-lg hover:bg-gray-800 dark:bg-blue-100 dark:hover:bg-blue-300 duration-200 active:scale-105"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- error msg -->
+             <p class="text-white hidden error">Invalid City Name</p>
+            <!-- weather wrap -->
+            <div class="weather hidden w-full">
+              <!-- weather show -->
+              <div class="text-white text-center select-none">
+                <img
+                  src="./public/images/clear.png"
+                  alt=""
+                  class="weather-icon w-auto mx-auto"
+                />
+                <h1 class="text-5xl font-heading font-semibold mb-3 city">
+                  New York
+                </h1>
+                <h3 class="text-4xl temp font-medium text-gray-100">23°C</h3>
+              </div>
+              <!-- details -->
+              <div
+                class="details text-white flex items-center w-full justify-between p-5"
+              >
+                <div class="text-center p-0 md:p-3">
+                  <img
+                    src="./public/images/humidity.png"
+                    class="mb-2 w-full"
+                    alt=""
+                  />
+                  <div class="text-center mt-3">
+                    <p class="humidity">50%</p>
+                    <p class="font-heading font-medium">humidity</p>
+                  </div>
+                </div>
+                <div class="text-center p-0 md:p-3">
+                  <img
+                    src="./public/images/wind.png"
+                    class="mb-2 w-full"
+                    alt=""
+                  />
+                  <div class="text-center mt-3">
+                    <p class="wind">15km/h</p>
+                    <p class="font-heading font-medium">Wind Speed</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- waiting weather -->
+            <div class="w-2/3 sample  ">
+              <img
+                src="./public/images/waiting-weather.png"
+                class="rounded-lg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
+<!-- <img src="./public/images/clouds.png" alt=""> -->
