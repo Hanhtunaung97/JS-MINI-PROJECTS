@@ -1,7 +1,7 @@
 # This repo is collection of js mini projects
 
 ## <a>⚙️ Tech Stack</a>
-
+- Vanilla JS
 - Vite
 - Tailwind CSS
 
